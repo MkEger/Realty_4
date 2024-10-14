@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адмін панель - CRM для нерухомості</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div id="branding">
+            <h1>CRM для нерухомості</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Головна</a></li>
+                <li><a href="login.html">Авторизація</a></li>
+                <li><a href="register.html">Реєстрація</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="admin.html">Адмін панель</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="content">
+    <div class="container admin-container">
+        <aside class="sidebar">
+            <h3>Меню адміністратора</h3>
+            <ul>
+                <li><a href="#dashboard"><i class="fas fa-tachometer-alt"></i> Дашборд</a></li>
+                <li><a href="#properties"><i class="fas fa-home"></i> Об'єкти нерухомості</a></li>
+                <li><a href="#clients"><i class="fas fa-users"></i> Клієнти</a></li>
+                <li><a href="#agents"><i class="fas fa-user-tie"></i> Агенти</a></li>
+                <li><a href="#reports"><i class="fas fa-chart-bar"></i> Звіти</a></li>
+                <li><a href="#settings"><i class="fas fa-cog"></i> Налаштування</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <h2>Дашборд</h2>
+            <div class="dashboard-widgets">
+                <div class="widget">
+                    <h3>Активні об'єкти</h3>
+                    <div class="number">150</div>
+                </div>
+                <div class="widget">
+                    <h3>Нові клієнти (цього місяця)</h3>
+                    <div class="number">27</div>
+                </div>
+                <div class="widget">
+                    <h3>Продажі (цього місяця)</h3>
+                    <div class="number">12</div>
+                </div>
+            </div>
+
+
+            <h2>Управління об'єктами нерухомості</h2>
+            <div class="search-bar">
+                <input type="text" placeholder="Пошук об'єкта...">
+                <button>Пошук</button>
+            </div>
+
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Тип</th>
+                        <th>Адреса</th>
+                        <th>Ціна</th>
+                        <th>Площа</th>
+                        <th>Статус</th>
+                        <th>Дії</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Квартира</td>
+                        <td>вул. Шевченка, 10, кв. 5</td>
+                        <td>100000 $</td>
+                        <td>60 м²</td>
+                        <td>Доступно</td>
+                        <td>
+                            <a href="#" class="action-btn view-btn">Перегляд</a>
+                            <a href="#" class="action-btn edit-btn">Редагування</a>
+                            <a href="#" class="action-btn delete-btn">Видалення</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Будинок</td>
+                        <td>вул. Лісова, 25</td>
+                        <td>250000 $</td>
+                        <td>150 м²</td>
+                        <td>Продано</td>
+                        <td>
+                            <a href="#" class="action-btn view-btn">Перегляд</a>
+                            <a href="#" class="action-btn edit-btn">Редагування</a>
+                            <a href="#" class="action-btn delete-btn">Видалення</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</div>
